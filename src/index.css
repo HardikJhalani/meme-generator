@@ -1,13 +1,92 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+
+*,
+*::after,
+*::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,
+input,
+button {
+  font-family: 'Karla', sans-serif;
+}
+
+.navbar {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 37px;
+  color: white;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
+
+.navbar .left {
+  display: flex;
+  gap: 7px;
+}
+
+.left h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 24.25px;
+  letter-spacing: -0.1em;
+}
+
+.left img {
+  width: 31.31px;
+  height: 26.22px;
+}
+
+.text {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* meme container  */
+
+.meme {
+  display: flex;
+  flex-direction: column;
+  padding: 36px;
+  gap: 15px;
+}
+
+.meme .inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.meme .inputs input {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: 2px solid #D5D4D8;
+  font-size: 0.75rem;
+  color: #0D0D0D;
+  padding: 10px;
+}
+
+.new-img-btn {
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.1em;
+  color: white;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.4s all;
+}
+
+.new-img-btn:hover {
+  opacity: 1;
 }
