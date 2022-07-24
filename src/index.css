@@ -90,3 +90,17 @@ button {
 .new-img-btn:hover {
   opacity: 1;
 }
+
+.meme .meme-main {
+  height: max-content;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.meme-main img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: fill;
+  border-radius: 8px;
+}
